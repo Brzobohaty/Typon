@@ -1,0 +1,573 @@
+{\rtf1\ansi\ansicpg1252{\fonttbl{\f0\fnil\fcharset1\fprq2 Arial;}{\f1\fnil\fcharset1\fprq2 Wingdings;}{\f2\fnil\fcharset1\fprq2 Monospaced;}{\f3\fnil\fcharset1\fprq2 Times New Roman;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue128;\red0\green0\blue192;\red0\green0\blue255;\red0\green128\blue0;\red0\green128\blue128;\red0\green128\blue192;\red0\green128\blue255;\red0\green192\blue0;\red0\green192\blue128;\red0\green192\blue192;\red0\green192\blue255;\red0\green255\blue0;\red0\green255\blue128;\red0\green255\blue192;\red0\green255\blue255;\red128\green0\blue0;\red128\green0\blue128;\red128\green0\blue192;\red128\green0\blue255;\red128\green128\blue0;\red128\green128\blue128;\red128\green128\blue192;\red128\green128\blue255;\red128\green192\blue0;\red128\green192\blue128;\red128\green192\blue192;\red128\green192\blue255;\red128\green255\blue0;\red128\green255\blue128;\red128\green255\blue192;\red128\green255\blue255;\red192\green0\blue0;\red192\green0\blue128;\red192\green0\blue192;\red192\green0\blue255;\red192\green128\blue0;\red192\green128\blue128;\red192\green128\blue192;\red192\green128\blue255;\red192\green192\blue0;\red192\green192\blue128;\red192\green192\blue192;\red192\green192\blue255;\red192\green255\blue0;\red192\green255\blue128;\red192\green255\blue192;\red192\green255\blue255;\red255\green0\blue0;\red255\green0\blue128;\red255\green0\blue192;\red255\green0\blue255;\red255\green128\blue0;\red255\green128\blue128;\red255\green128\blue192;\red255\green128\blue255;\red255\green192\blue0;\red255\green192\blue128;\red255\green192\blue192;\red255\green192\blue255;\red255\green255\blue0;\red255\green255\blue128;\red255\green255\blue192;\red255\green255\blue255;}\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Prohlášení 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Byl jsem seznámen s tím, že na můj ročníkový projekt se plně vztahuje zákon č. 121/2000 Sb., o právu autorském, zejména § 60 – školní dílo. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Beru na vědomí, že Technická univerzita v Liberci (TUL) nezasahuje do mých autorských práv užitím mého ročníkového projektu pro vnitřní potřebu TUL. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Užiji-li ročníkový projekt nebo poskytnu-li licenci k jeho využití, jsem si vědom povinnosti informovat o této skutečnosti TUL; v tomto případě má TUL právo ode mne požadovat úhradu nákladů, které vynaložila na vytvoření díla, až do jejich skutečné výše. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Ročníkový projekt jsem vypracoval samostatně s použitím uvedené literatury a na základě konzultací s vedoucím mého ročníkového projektu a konzultantem. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Současně čestně prohlašuji, že tištěná verze práce se shoduje s elektronickou verzí, vloženou do IS STAG. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Datum: 1. 5. 2015
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Podpis:
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obsah
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Úvod\tab 6
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 1\tab Nand2Tetris ve světě\tab 6
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2\tab Specifikace platformy Hack\tab 7
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2.1\tab Hardware\tab 7
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2.2\tab Software\tab 8
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 3\tab Projekt 0\tab 8
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 4\tab Projekt 1 – Booleova logika\tab 11
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 5\tab Projekt 2 – Booleova aritmetika\tab 14
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 6\tab Projekt 3 – Sekvenční logika\tab 17
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7\tab Projekt 4 – Jazyk symbolických adres\tab 20
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.1\tab Jazyk assembleru pro platformu Hack\tab 21
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.2\tab Hack Assembler\tab 21
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.3\tab CPU emulátor\tab 22
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.4\tab Program 1: Násobení\tab 23
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.5\tab Program 2: Fill\tab 24
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 8\tab Projekt 5 – Architektura počítače\tab 25
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 9\tab Projekt 6 – Assembler\tab 32
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 10\tab Projekt 7 – Virtuální stroj – Aritmetika zásobníku\tab 34
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 11\tab Projekt 8 – Virtuální stroj – Řízení programu\tab 36
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 12\tab Projekt 9 – Vyšší programovací jazyk\tab 36
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 13\tab Projekt 10 – Kompilátor – Analýza syntaxe\tab 41
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 14\tab Projekt 11 – Kompilátor – Generování kódu\tab 42
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Závěr\tab 44
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Použitá literatura\tab 45
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Seznam obrázků
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 1: Datová paměť\tab 8
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 2: Hardware simulátor\tab 9
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 3: HDL soubor pro XOR\tab 10
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 4: Soubor s výstupem pro obvod XOR\tab 10
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 5: Testovací skript pro XOR\tab 11
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 6: Hradlo XOR v 1b verzi naprogramované v HDL\tab 12
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 7: NOT\tab 12
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 8: AND\tab 12
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 9: OR\tab 13
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 10: XOR\tab 13
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 11: MUX\tab 13
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 12: DMUX\tab 14
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 13: Poloviční sčítačka\tab 14
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 14: Úplná sčítačka\tab 15
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 15: ALU\tab 16
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 16: Implementace ALU\tab 17
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 17: Jedna bitová buňka\tab 17
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 18: Implementace 16b registru\tab 18
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 19: N-registrová paměť RAM\tab 18
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 20: Implementace osmiregistrové paměti RAM\tab 19
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 21: Program counter (čítač instrukcí)\tab 20
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 22: Implementace PC\tab 20
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 23:  Hack Assembler\tab 22
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 24: CPU emulátor\tab 23
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 25: Implementace počítače\tab 26
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 26: Paměť dat\tab 27
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 27: Zapojení RAM\tab 28
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 28: Implementace CPU\tab 29
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 29: Rozlišení A-instrukce, C-instrukce a zpětná vazba do registru A\tab 30
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 30: Ukládání do D registru\tab 30
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 31: Ovládání zapisování do paměti RAM\tab 30
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 32: Volba čtení z paměti nebo z registru A\tab 30
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 33: Zvolení funkce ALU\tab 31
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 34: Ovládání PC\tab 32
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 35: UML digram tříd pro implementaci assembleru\tab 33
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 36: Virtual Machine Emulator\tab 35
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 37: UML digram tříd pro implementaci překladače VM jazyka\tab 36
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 38: Ukázka výstupu 1. části kompilátoru\tab 42
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Seznam použitých zkratek
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 MOOC\tab Massive Open Online Course (masivní veřejný online kurz)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 AND\tab logické násobení
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 NAND\tab negovaný AND
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 HDL\tab hardware description language
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 HW\tab hardware
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 SW\tab software
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 MIT\tab Massachusetts Institute of Technology
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 NOT\tab logická negace
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 OR\tab logický součet
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 XOR\tab logický exkluzivní OR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 MUX\tab multiplexor
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 DMUX\tab demultiplexor
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 RAM\tab random-access memory (paměť s přímým přístupem)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 ALU\tab arithmetic logic unit (aritmeticko-logická jednotka)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 DFF\tab delay (data) flip flop (D klopné hradlo)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 PC\tab program counter (čítač instrukcí)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 ROM\tab read-only memory (paměť pouze pro čtení)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 CPU\tab central processing unit (procesor)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 API\tab application programming interface (aplikační programové rozhraní)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 VM\tab virtual machine (virtuální stroj)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 XML\tab Extensible Markup Language (rozšiřitelný značkovací jazyk)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 OOP\tab objektově orientované programování
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Úvod
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kurz Nand2Tetris se skládá z 12 projektů, v průběhu kterých by měl student sestavit jednodu-chou, ale soběstačnou platformu. Student dostane na začátku k dispozici pouze hradlo NAND a musí na něm postupně vybudovat celou HW část počítače Hack, jak je nazývána platforma pro tento kurz.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Veškeré navrhování HW probíhá virtuálně za pomocí HDL a dodaných emulátorů, které umožňují vytvořené komponenty testovat. Začíná se sestavením základních logických hradel a složitějších kombinačních obvodů potřebných pro další vývoj platformy. Pokračuje se sestavením různé sekvenční logiky, z níž většina směřuje k realizaci paměťových částí plat-formy. A ve finále je z jednotlivých komponent sestaven procesor a následně i celý počítač Hack.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Nicméně navrhování HW je pouze první a jednodušší část kurzu. V druhé polovině se student ponoří do SW části platformy, která směřuje k vystavění hierarchie překladačů pro vyšší programovací jazyk Jack, který je specifický pro tuto platformu. Začíná se navrhnutím as-sembleru, jakožto nejnižší vrstvy překladačů. Nad assemblerem je postaven virtuální stroj, který složí jako mezivrstva mezi samotným kompilátorem jazyka Jack a assemblerem. Nakonec je naprogramován samotný kompilátor pro jazyk Jack a ve finále je možné v tomto jazyce naprogramovat jednoduchý operační systém a případně jednoduchou hru.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 1\tab Nand2Tetris ve světě
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kurz Nand2Tetris je velice oblíbený a vychvalovaný projekt, který se vyučuje na prestižních světových univerzitách. Vzhledem k tomu, že autoři jsou z Izraele, tak není překvapující, že je kurz vyučován na univerzitě v Jeruzalémě (The Hebrew University of Jerusalem). Autoři ovšem vytvořili i online kurz vyučovaný v angličtině, který je přístupný zdarma . Kurz obsa-huje pouze prvních 6 projektů, ale i tak se těší obrovské oblibě.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V roce 2005, kdy byl tento kurz vytvořen a poskytnut online, se stal okamžitě tím, čemu se dnes říká MOOC. (TORGOVNICK Kate 2012) Kurz tímto získal velkou pozornost zahranič-ních univerzit a vyvrcholením bylo vydání knihy, která slouží jako průvodce kurzem, pod záštitou prestižní univerzity MIT v USA. První polovina knihy je přístupná online zdarma na stránkách kurzu, ale pro druhou polovinu projektů je potřeba si jí zakoupit. Nicméně všechno ostatní (zadání projektů, potřebné emulátory a další doprovodné programy) je k celému kurzu ke stažení zdarma.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kurzy založené na projektu Nand2Tetris jsou vyučovány i na dalších univerzitách jako jsou například Harvard University v USA, IDC Herzliya v Izraeli a další. (THE UNIVERSITY OF EDINBURG INFORMATICS 2007)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2\tab Specifikace platformy Hack
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Jedná se o jednoduchý, ale přesto široce využitelný počítač, který by se dal svými parametry přirovnat k mobilnímu telefonu nebo gameboyi. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2.1\tab Hardware
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Počítač Hack je sestaven po vzoru von Neumannovy architektury a skládá se tedy z CPU, paměti, vstupních a výstupních zařízení. Ale paměť počítače Hack je navržena po vzoru Harwardské architektury a je tedy oddělena paměť pro data a paměť pro instrukce. Obě paměti využívají 16 bitový formát slov a 15 bitový adresový prostor, přičemž každá z pamětí dokáže pojmout 32 000 16-bitových slov. Zatímco paměť pro instrukce je navržena jako ROM, tak paměť pro data je typu RAM.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Vstupním zařízením jsou pouze klávesy z klávesnice a všechny najednou jsou mapovány do datové paměti RAM na adresu 24576 (poslední slovo v paměti) ve formě ASCII kódu. Výstupním zařízením je pouze černobílá obrazovka, která má 256 řádků o 512 pixelech na jeden řádek. Obrazovka je mapována v datové paměti RAM posloupností slov o velikosti 8 000 slov a začíná na adrese 16384 (viz Obrázek 1).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 1: Datová paměť 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 CPU se skládá z ALU a tří 16-bitových registrů D, A a PC. Registr D slouží pouze pro mani-pulaci s daty a registr A slouží k manipulaci s daty, ale hlavně také k adresování paměti. Registr PC neboli program counter má v sobě uložen ukazatel na instrukci, která má být vykonána v dalším taktu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 2.2\tab Software
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Softwarová úroveň platformy je složena z několika vrstev. Přímo nad hardwarem operuje jednoduchý jazyk assembleru, který je nejnižší vrstvou. Nad assemblerem je další abstraktní vrstvou jazyk VM, který je principiálně „zásobníkovým“ jazykem a tvoří mezivrstvu, která usnadňuje kompilaci nejvyššího programovacího jazyka na platformě. Tento jazyk je nazýván Jack a je velice podobný jazyku Java nebo C#, nicméně má o hodně jednodušší syntaxi a nepodporuje například dědičnost. Součástí platformy je i jednoduchý operační systém, který je zde pouze v podobě knihovních funkcí.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 3\tab Projekt 0
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V úvodním projektu se student seznamuje pouze s prostředím Hardware simulátoru (viz Obrázek 2), který mu umožňuje podrobně sledovat funkčnost již naprogramovaných kombi-načních a sekvenčních obvodů. Od autora jsou takto naprogramovány všechny základní kombinační a sekvenční obvody, ale není vidět jejich implementace, takže student si může v simulátoru podrobně vyzkoušet, jak se má obvod správně chovat, ale neuvidí jeho realizaci. Autor zde doporučuje podrobně prostudovat z kombinačních obvodů zejména AND, XOR, MUX a ze sekvenčních obvodů 16b registr a 8B paměť RAM  (všechny budou implemento-vány v následujících projektech).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 2: Hardware simulátor
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro testování jednoho obvodu jsou potřeba čtyři soubory. V jednom je pomocí HDL  popsána funkčnost obvodu (viz Obrázek 3). Právě tento soubor musí ve většině dalších projektů stu-dent doplnit o danou implementaci logického obvodu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 3: HDL soubor pro XOR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V druhém souboru je uložen výstup po provedení testovacího skriptu na daném obvodu (viz Obrázek 4). V třetím je uložen očekávaný výstup, který se při testování řádek po řádku po-rovnává s výstupním souborem. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 4: Soubor s výstupem pro obvod XOR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 A posledním souborem je skript, který obsahuje kombinace vstupních dat, na kterých se má daný obvod otestovat (viz Obrázek 5). 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 5: Testovací skript pro XOR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pokud chce student pouze daný obvod simulovat a ručně si zadávat vstupní data a zkoušet, jak na ně obvod zareaguje, stačí mu pouze první ze jmenovaných souborů, který popisuje funkčnost daného obvodu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Hardware simulátor umožňuje zobrazit všechny 4 soubory, o kterých byla řeč výše, přímo při simulaci a sledovat, v jakém stavu se vzhledem k souboru zrovna program nachází. Pomocí simulátoru je možné krokovat testovací skript a umožňuje tak studentovi se v každém testova-cím případě podívat, v jakém stavu se nacházejí pomocné proměnné a odhalit tak případnou chybu. Kromě krokování umožňuje simulátor také debuggování pomocí „breakpointů“, které se vážou na konkrétní proměnnou a její hodnotu. V případě potřeby je možné i ručně měnit hodnoty na vstupu nebo měnit číselnou soustavu, v které se všechny hodnoty zobrazují.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 4\tab Projekt 1 – Booleova logika
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V prvním projektu si student zejména procvičí Booleovu algebru a sestaví logická hradla, ze kterých bude v dalších projektech sestavovat komplikovanější obvody. Jediným elementárním prvkem, který student nemusí sestavovat je hradlo NAND. Student musí sestavovat všechna základní logická hradla NOT, OR, AND, XOR, dále MUX, DMUX a nakonec je všechna sestavit i v 16b verzi nebo s více vstupy.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Všechna hradla se navrhují v HDL (viz Obrázek 6) a testují se pomocí Hardware simulátoru, který byl již zmíněn v minulém projektu. Student musí pouze implementovat samotnou funkci hradla, protože testovací soubory a rozhraní hradla již dostane připravené.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Sestavit tato hradla v základní dvouvstupé a 1b verzi je jednoduché. Je více možností, jak si poradit s vícebitovými hradly, ale já jsem zvolil tu, co mi přišla nejsnadnější. Sestavil jsem si vícebitové hradlo NAND a pomocí něho jsem postupně opět sestavil zbylá hradla. Sestavení vícebitových verzí těchto hradel je spíše rutinní práce až na MUX a DMUX, kde je potřeba si uvědomit, že adresový bit je stále 1b a zápis kódu je tedy trochu složitější. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 6: Hradlo XOR v 1b verzi naprogramované v HDL
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Na následujících obrázcích jsou schematicky znázorněny implementace hradel podle mého návrhu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 7: NOT
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 8: AND
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 9: OR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 10: XOR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 11: MUX
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 12: DMUX
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 5\tab Projekt 2 – Booleova aritmetika
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Cílem druhého projektu je sestavení jednoduché ALU . Nejdříve je student dobře seznámen s reprezentací a aritmetikou binárních čísel a následně tyto znalosti aplikuje při navrhování základních aritmetických hradel. Od poloviční sčítačky, přes úplnou sčítačku se dostane až k vícebitové sčítačce, kterou použije jako součást samotné ALU.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Navrhování obvodů opět probíhá v HDL a testovány jsou v Hardware simulátoru. Na následu-jících obrázcích jsou vidět schémata zapojení logických obvodů tak, jak jsem je navrhl já.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 13: Poloviční sčítačka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 14: Úplná sčítačka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Sestavit logické obvody pro sčítačky není nijak zvlášť těžký úkol, ale mnohem obtížnější je sestavit kompletní logický obvod pro ALU. ALU pro platformu Hack (viz Obrázek 15) má dva 16b vstupy, 6 ovládacích bitů (nulování vstupu x nebo y, negování vstupu x nebo y, výběr funkce sčítání nebo vícebitového AND, negování výstupu), jeden 16b výstup a dva kontrolní výstupy (Detekují, zda je výstup nulový nebo zda je záporný).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 15: ALU 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Osobně jsem u návrhu ALU nejdříve sestavil logické obvody pro nulování a negování vstupů a výstupu, což jsem zvládl za použití základních logických hradel. Následně jsem musel vymyslet centrální část obvodu, kterou je volba funkce, na což jsem využil MUX. Kompletní zapojení je vidět na Obrázek 16.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 16: Implementace ALU
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 6\tab Projekt 3 – Sekvenční logika
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Předchozí projekt uzavíral část, která se věnovala pouze kombinačním logickým obvodům. Tento projekt je úvodem do sekvenční logiky a jeho cílem je sestavit základní hierarchii paměťových prvků v počítači od jednoho bitu přes registr až po paměť RAM. Kromě hierar-chie pamětí je také nutné sestavit pro pozdější logické obvody jednoduchý čítač.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Stejně jako v prvním projektu student nemusel implementovat logické hradlo NAND, tak v tomto projektu nemusí implementovat klopný obvod (DFF ). Pomocí klopného obvodu, multiplexoru a zpětné vazby bylo velice jednoduché sestavit 1b buňku (viz Obrázek 17).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 17: Jedna bitová buňka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Z bitových buněk se dal sestavit 16b registr (viz Obrázek 18) a z registru jednoduchá paměť RAM (viz Obrázek 19). Pro paměť RAM bylo pouze zapotřebí navrhnout kombinační logiku pro adresování paměti (viz Obrázek 20). Následně nebyla nikterak složité rozšiřovat paměť RAM až na kapacitu 32 KB.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 18: Implementace 16b registru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 19: N-registrová paměť RAM 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 20: Implementace osmiregistrové paměti RAM
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Jako nejtěžší z celého projektu se ukázal být onen čítač (viz Obrázek 21), na kterém bylo v celku složité vymyslet logický obvod pro ovládání pomocí tří bitů (inc, reset, load). Čítač je konkrétně později použit pro realizaci PC . Řešení nakonec není složité na sestavení, ale pouze na vymyšlení, protože centrálním prvkem celé logiky se stane multiplexor, kterému je pouze potřeba dobře přiřadit správné hodnoty na vstupy podle priority funkcí čítače (viz Obrázek 22).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64       
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 21: Program counter (čítač instrukcí) 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 22: Implementace PC
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7\tab Projekt 4 – Jazyk symbolických adres
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Cílem 4. projektu je zejména seznámení se s jazykem assembleru  a dvěma nástroji, které budou využívány v dalších projektech. Kromě obecného teoretického rámce je student uveden do jazyka symbolických adres a to konkrétně pro platformu Hack. Aby si student nástroje a jazyk pořádně vyzkoušel, dostane rovnou za úkol navrhnout dva jednoduché programy.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.1\tab Jazyk assembleru pro platformu Hack
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Jazyk pro tuto platformu je v určitých ohledech specifický, ale zato velice jednoduchý. Skládá se ze dvou základních instrukcí, které jsou nazývány A-instrukce a C-instrukce.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 A-instrukce je zapisována ve formátu @hodnota, kde hodnota představuje nezáporné číslo v desítkové soustavě nebo symbol odkazující na takové číslo. Tato instrukce způsobí, že hodnota bude uložena do registru A.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 C-instrukce je složitější a mnohem více variabilní. Představuje: „Co chceme spočítat.“, „Kde chceme uložit výsledek.“ a „Kde se má pokračovat.“. C-instrukce se zapisuje ve tvaru umístě-ní=výpočet;skok, přičemž pouze umístění a skok smějí být prázdné.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Jako symboly se mohou využívat buďto samotná označení registrů (D a A) nebo odkaz do paměti (M) kde M představuje ve skutečnosti odkaz na slovo v datové paměti RAM na adrese uložené v registru A. Jako symbol se dá také využít předdefinovaný ukazatel do paměti, jako například SCREEEN nebo R0.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Třetí speciální pseudo-instrukcí můžeme nazvat deklaraci návěstí , která se zapisuje ve formátu (xxx), kde xxx představuje název návěstí (dále již jen L-instrukce).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.2\tab Hack Assembler
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 První důležitou aplikací, která je potřeba k vytvoření programu, napsaného v nižším progra-movacím jazyce, je Assembler neboli překladač (viz Obrázek 23). Jeho úkol je přeložit program napsaný v jazyce symbolických adres do strojového kódu. Na obrázku je vidět na levé straně okno s názvem „Source“, které obsahuje nahraný program zapsaný v jazyce symbolických adres. V pravém okně s názvem „Destination“ je ten samý program po překladu v podobě strojového kódu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 23:  Hack Assembler
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.3\tab CPU emulátor
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Druhou aplikací potřebnou pro tento a další projekty je CPU emulátor, který slouží pro simu-laci běhu programu v CPU počítače Hack (viz Obrázek 24). Do emulátoru se nahrává soubor s programem ve formátu strojového kódu. Kromě spuštění samotného programu v emulátoru je možné program účinně „debugovat“ pomocí „breakpointů“ a stavů registrů. Jak je vidět na obrázku, tak na levé straně je nejdříve okno s instrukční pamětí ROM, která již obsahuje posloupnost instrukcí nahraného programu. Dále se zde nachází datová paměť RAM stavy registrů D, PC a A. V pravém dolním rohu je zobrazován stav vstupů a výstupů ALU. V pravém horním rohu okna může být zobrazen buďto testovací skript, výstup programu, porovnávací soubor nebo výstupní obrazovka počítače Hack. V programu je možné pustit program v třech režimech: bez animací, s animacemi nebo s animacemi a datovými toky. Bez animací se pouze provede program samotný. Při zapnutých animacích se při provádění pro-gramu zvýrazňují žlutě části pamětí, kde zrovna probíhají změny. Poslední mód, kromě toho, že dělá to samé co předchozí dva, ještě navíc ukazuje, odkud kam se právě data přesouvají. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 24: CPU emulátor
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.4\tab Program 1: Násobení
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Prvním programem, který jsem měl navrhnout je násobení dvou binárních čísel. První číslo je uloženo v paměti R0, druhé v R1 a výsledek má být uložen do R2.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro realizaci násobení jsem využil sčítání. Vycházel jsem z myšlenky, že například 4∙5 se dá zapsat také jako 5+5+5+5 a dá se tedy realizovat pomocí smyčky a sčítání.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kód programu:
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @i
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     M=1      //i=1
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @R2
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     M=0      //R2=0
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 (LOOP)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @i
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D=M      //D=i
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @R1
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D=D-M    //D=i-R1
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @END
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D;JGT    //if(i-R1)>0 then GOTO END
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @R0
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D=M      //D=R0
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @R2
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     M=M+D    //R2=R2+R0
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @i
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     M=M+1    //i++
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @LOOP
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     0;JMP    // GOTO LOOP
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 (END)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @END
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     0;JMP    //nekonečná smyčka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 7.5\tab Program 2: Fill
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Druhý program má vyplnit obrazovku počítače černou barvou v případě, že je stisknutá libovolná klávesa na klávesnici.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Tento úkol byl spíše těžší na orientaci v programu, než na samotnou myšlenku. Základem jsou dvě smyčky, přičemž jedna se stará o zabarvení celé obrazovky černou barvou a druhá se stará o zabarvení obrazovky bílou barvou. Tyto smyčky jsou spuštěny na základě podmínky, zda je nebo není stisknuta libovolná klávesa.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kód programu:
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 (LOOP)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @SCREEN
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D=A                                
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     M=D               //ADR=SCREEN
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @KBD
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D=M               //D=KEYBOARD
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @FILL
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     D;JNE             //if(stisknuta klavesa) then GOTO FILL
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     (UNFILL)                          
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             A=M
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             M=0       //M[ADR]=000000000000000000
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @24384    //poslední adresa obrazovky
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D=A
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             M=M+1     //ADR++
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D=D-M     //D=24384-ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @UNFILL
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D;JGT     //if(24384-ADR)>0 then GOTO LOOP2
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     @END
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     0;JMP             //GOTO END
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     (FILL)                          
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             A=M
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             M=-1      //M[ADR]=1111111111111111
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @24384
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D=A
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             M=M+1     //ADR++
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D=D-M     //D=24384-ADR
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             @FILL
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             D;JGT     //if(24384-ADR)>0 then GOTO LOOP2
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     (END)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         @LOOP
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         0;JMP         //nekonečná smička
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 8\tab Projekt 5 – Architektura počítače
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Projekt 5 je posledním projektem v hardwarové vrstvě a také jí celou náležitě uzavírá. Cílem tohoto projektu je sestavit již funkční počítač Hack (viz Obrázek 25). Pro jeho sestavení student potřebuje několik součástí, které vytvořil v minulých projektech. ALU byla sestavena již v projektu 2, registry a PC (čítač) byly navrhnuty v projektu 3, stejně jako ROM a RAM paměť.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 25: Implementace počítače 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Vzhledem k tomu, že Hack počítač umí vykonávat pouze jeden program, který má nahraný v ROM paměti, tak je jeho ovládání velice jednoduché. Kromě toho, že uživatel může intera-govat s programem klávesnicí a obrazovkou, tak může také restartovat neboli spustit vykoná-vání programu. Součástí počítače je vstup (tlačítko) reset, který se chová následovně: Při přivedení logické 1 se program nevykonává a při přivedení logické 0 se program vykonává.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 První jsem začal se sestavením paměti RAM pro data, která se skládá z tří čipů nižší úrovně: RAM16K (paměť RAM pro 16 tisíc 16b slov), obrazovky a klávesnice (viz  Obrázek 26). RAM16K byla sestavena v projektu 3 a mapované paměti pro obrazovku a klávesnici jsou dodány jako hotové obvody. Stačí tedy sloučit tyto tři prvky pod jeden adresový prostor.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 26: Paměť dat 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Z obrázku je vidět, jaký adresový rozsah má každá část paměti. K sestavení správného obvodu pro adresování této paměti je potřeba si uvědomit, že když si převedeme adresy do binární soustavy, tak první část paměti obsahuje všechny adresy, které mají v nejvyšším bitu 0. První rozpůlení paměti jsem tedy realizoval pomocí multiplexoru. Dále je potřeba rozdělit druhou půlku paměti na obrazovku a klávesnici, což jsem provedl stejným způsobem, ale tentokrát jsem se řídil druhým nejvyšším bitem. Je také potřeba rozdělit „load“ bit mezi první polovinu paměti a „Screen“, což jsem provedl analogickým způsobem jako v předchozím případě, akorát místo multiplexoru jsem použil demultiplexor (viz Obrázek 27).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 27: Zapojení RAM
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Nejpracnější součástí tohoto projektu je sestavení samotného CPU. Jak zapojit logické prvky dohromady tak, aby daly dohromady funkční CPU je naznačeno na Obrázek 28. V návrhu ovšem chybí hlavní ovládací logika, jejíž vstupy a výstupy jsou na obrázku naznačeny písme-nem C (červeně). Navrhnout tuto logiku je právě ústředním cílem tohoto projektu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 28: Implementace CPU 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro navrhnutí ovládací logiky je zapotřebí pouze instrukce na vstupu CPU, kterou je potřeba rozdělit na několik částí následovně ixxac1c2c3c4c5c6d1d2d3j1j2j3. Přičemž i rozhoduje o tom, zda se jedná o A-instrukci nebo C-instrukci. V případě A-instrukce je všech zbylých 15 bitů reprezentováno jako konstanta. V případě C-instrukce bit a rozhoduje o tom, zda se budou brát data z registru A nebo z paměti RAM. Bity c slouží k určení funkce, která má být vypočí-tána pomocí ALU. Bity d určují, kam má být uložen výsledek a bity j rozhodují o „jump podmínce“.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro lepší přehlednost jsem zapojení ovládací logiky rozdělil do více následujících schémat.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 29: Rozlišení A-instrukce, C-instrukce a zpětná vazba do registru A
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 30: Ukládání do D registru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 31: Ovládání zapisování do paměti RAM
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 32: Volba čtení z paměti nebo z registru A
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 33: Zvolení funkce ALU
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 34: Ovládání PC
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Nakonec je potřeba sestavit kompletní počítač Hack, což je velice jednoduché, protože jde pouze o správné zapojení tří součástí ROM, RAM a CPU podle Obrázek 25. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 9\tab Projekt 6 – Assembler
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Cílem 6. projektu je naprogramovat assembler pro platformu Hack. Ústřední myšlenka as-sembleru je celkem jednoduchá, protože se jedná o prostý textový překladač. Instrukce (viz 7.1) jsou navrhnuty tak, aby se jednoduše rozdělovaly na dílčí části a aby se dále tyto části kódovaly do binární podoby neboli strojového kódu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro realizaci tohoto projektu a všech následujících si student může vybrat libovolný vyšší programovací jazyk. Je mu poskytnuto i jazykově neutrální API pro realizaci assembleru. (NISAN Noam a Shimon SCHOCKEN 2005, str. 103) Já osobně jsem si vybral pro realizaci jazyk Java, protože mi je nejbližší, ale nevyužil jsem doporučené API. Vytvořil jsem si svoje vlastní, protože mi doporučené nevyhovovalo.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Kromě prostého textového překladu instrukcí do binární podoby se musí nejdříve přeložit všechny symboly (návěstí, proměnné) na číselné konstanty (skutečné adresy v paměti). Což se provede za pomoci tabulky, která bude udržovat informace o symbolech a jim přiděleným adresám. (NISAN Noam a Shimon SCHOCKEN 2005, str. 105–106) Nejdříve jsou v prvním průchodu přeložena všechna návěstí v programu, protože je potřeba spočítat na kterém řádku se návěstí nachází a při skoku na toto návěstí již v binární podobě kódu odkazovat přímo na adresu v instrukční paměti. V druhém průchodu jsou již jednotlivé instrukce nejdříve rozděle-ny na dílčí části, následně zakódovány do binární podoby, a pokud se při kódování narazí na symbol místo číselné konstanty, tak je mu nejdříve přiřazena paměť a následně je symbol nahrazen adresou paměti. (NISAN Noam a Shimon SCHOCKEN 2005, str. 116) Přesná podoba jednotlivých instrukcí v binární podobě je vysvětlena na konci kapitoly 8.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro implementaci assembleru jsem zvolil jednoduchou strukturu aplikace, která je vidět na UML diagramu (viz Obrázek 35). Konkrétní podoba tříd Project6, Writer a Reader je intuitiv-ní, takže v následujícím textu popisuji funkci tříd Coder a Translater, které zprostředkovávají hlavní funkce assembleru.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 35: UML digram tříd pro implementaci assembleru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Třída Coder slouží k zakódování instrukcí v jazyce assembleru do strojového jazyka. Algo-ritmus zakódování začíná voláním metody chooseInstruction, která rozliší, o jaký druh in-strukce se jedná (A-instrukce nebo C-instrukce). Následně je podle toho volána metoda codeA nebo codeC, která již zakóduje instrukci podle její specifikace. Metoda codeC interně využívá pro překlad ještě tří metod giveD, giveJ, giveC, které se starají o překlad jednotlivých částí C-instrukce (ixxac1c2c3c4c5c6d1d2d3j1j2j3), jejichž význam byl pospán v kapitole 7.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Třída Translater je využívána k přeložení symbolů v kódu na číselné konstanty neboli adresy v paměti. Udržuje informace o uspořádaných dvojicích (symbol, adresa) v hašovací tabulce . Klíčem v tabulce je symbol a hodnotou je adresa, což je výhodné pro následné dotazování, zda už má symbol přiřazenu adresu a jaká ta adresa je. Zatímco pro klasické symboly jsou dynamicky přidělovány adresy z paměti RAM, tak pro symboly představující návěstí jsou přidělovány adresy představující pořadí následující instrukce za návěstím.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 10\tab Projekt 7 – Virtuální stroj – Aritmetika zásobníku
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Cílem 7. projektu je naprogramovat opět jednoduchý překladač, ale tentokrát z jazyka VM do jazyka Assembleru (viz kapitola 7.1). Jazyk VM pro platformu Hack je založen na zásobníkové architektuře (veškeré operace jsou prováděny nad zásobníkem). (NISAN Noam a Shimon SCHOCKEN 2005, str. 105)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Instrukce pro VM jazyk jdou rozdělit do 4 skupin: aritmetické, paměťové, řízení toku a volání funkcí. V tomto projektu budou realizovány první dvě skupiny a v dalším projektu zbytek.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro ověřování funkčnosti překladače je použit již dříve používaný CPU Emulator, který umí spouštět program v jazyce symbolických adres. Dále je poprvé použita aplikace Virtual Ma-chine Emulator (viz Obrázek 36), která slouží k simulaci programů v jazyce VM. Princip jeho ovládání a jeho možnosti jsou úplně stejné, jako všech předchozích emulátorů. V tomto projektu student tento emulátor využívá pouze k tomu, aby si vyzkoušel, jak se mají opravdu dané instrukce chovat.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 36: Virtual Machine Emulator
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Ve třídě Reader (viz Obrázek 37) muselo dojít oproti minulému projektu k malé modifikaci, protože zdrojem VM jazyka může být více souborů na rozdíl od Assembleru. (NISAN Noam a Shimon SCHOCKEN 2005, str. 119)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro implementaci jsem zvolil podobnou architekturu jako v minulém projektu (viz Obrázek 37), přičemž klíčové jsou třídy Parser a CodeWriter. Parser slouží zejména k rozlišení různých druhů instrukcí a také k rozdělení každé instrukce na dílčí části. Třída CodeWriter slouží pro vytvoření ekvivalentních instrukcí do jazyka symbolických adres. Tato třída není ještě kompletní, protože cílem tohoto projektu bylo implementovat zatím pouze překlad aritmetic-kých a paměťových operací a zbytek bude implementován v dalším projektu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 37: UML digram tříd pro implementaci překladače VM jazyka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 11\tab Projekt 8 – Virtuální stroj – Řízení programu
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Cílem 8. projektu je dodělání chybějících částí do překladače z minulého projektu a tím překladač dokončit kompletně. Chybějí pouze ty části překladače, které se starají o překlad instrukcí týkajících se toku programu a volání funkcí (NISAN Noam a Shimon SCHOCKEN 2005, str. 289????).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V mém konkrétním návrhu se jedná pouze o doplnění několika metod do třídy CodeWriter, které jednotlivé druhy příkazů přeloží do jazyka symbolických adres. Do třídy CodeWriter tedy přibydou metody codeInit (kód pro inicializaci programu), codeLabel (návěstí), codeGo-to (skok), codeIf (podmínka), codeCall (volání funkce), codeReturn (návrat z funkce), code-Function (funkce).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 12\tab Projekt 9 – Vyšší programovací jazyk
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V devátém projektu se student seznamuje s programovacím jazykem Jack, aby v následujících projektech mohl pro tento jazyk vytvořit kompilátor. Jack je jednoduchý objektově orientova-ný jazyk. Jazyk je velice podobný programovacímu jazyku Java nebo C#, ale s mnohem jednodušší syntaxí a bez podpory dědičnosti. (NISAN Noam a Shimon SCHOCKEN 2005, str. 291?????) Přesto, že je jazyk Jack velice podobný zmíněným jazykům, se v něm vyskytují některé odlišnosti. Statické metody se deklarují klíčovým slovem „function“ a nestatické (objektové) metody se deklarují pomocí klíčového slova „method“. (NISAN Noam a Shimon SCHOCKEN 2005, str. 309??????) Pole nemá definovaný datový typ, takže každá jeho položka může být jiného typu. (NISAN Noam a Shimon SCHOCKEN 2005, str. 313???????????) Programovací jazyk Jack má slabou typovou kontrolu a není tedy definována ani konverze mezi jednotlivými typy. V jazyce není definována žádná priorita operátorů. (NISAN Noam a Shimon SCHOCKEN 2005, str. 318???????) Všechna tato zjednodušení jsou záměrná a spějí k jednoznačnému cíli, co nejvíce usnadnit tvorbu kompilátoru.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Hlavním úkolem této kapitoly je prozkoumání již naprogramovaných jednoduchých aplikací v jazyce Jack a následné vytvoření nějaké vlastní jednoduché aplikace. Já jsem si jako takovou zkušební aplikaci zvolil jednoduchou hru, která vytváří na obrazovce čáru, jejíž směr může uživatel ovládat pomocí šipek na klávesnici, ale nemůže zastavit její posouvání. Účelem hry je vejít se co nejdéle na obrazovku. Hráč nesmí narazit do okraje obrazovky ani sám do sebe. Aplikace je sice jednoduchá, ale byly na ní použity veškeré konstrukty jazyka. Z důvodu rozsáhlosti kódu je níže uveden pouze kód pro hru, kde hráč nemůže prohrát (může narážet do okraje obrazovky a může projíždět sám sebe).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 class Main \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     function void main() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         var Zizaly hra;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         let hra = Zizaly.new();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do hra.run();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab   do hra.dispose();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  * Třída zajišťuje spuštění a ovládání hry.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 class Zizaly \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     // žížala
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     field Zizala zizala;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     // Směr, kterým se bude pohybovat žížala
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     // 0=nikam,1=nahoru,2=dolu,3=doleva,4=doprava\tab 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     field int direction; 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * Vytvoření nové žížaly na obrazovce v levém horním rohu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     constructor Zizaly new() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab let zizala = Zizala.new(0, 0);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         let direction = 0;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return this;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * Spustí hru a detekuje stisknuté klávesy.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void run() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab   //stisknutá klávesa
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         var char key;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         //detekce konce hry
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         var boolean exit;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         let exit = false;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         while (~exit) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             // čekání na stisknutí klávesy
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             while (key = 0) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let key = Keyboard.keyPressed();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 do move();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             //rozlišení konkrétní klávesy
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             if (key = 81) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let exit = true;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             if (key = 131) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let direction = 1;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             if (key = 133) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let direction = 2;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             if (key = 130) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let direction = 3;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             if (key = 132) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let direction = 4;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             // čekání na puštění klávesy.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             while (~(key = 0)) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 let key = Keyboard.keyPressed();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64                 do move();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * Pohne žížalou v určeném směru o jedno políčko.  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void move() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (direction = 1) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do zizala.moveUp();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (direction = 2) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do zizala.moveDown();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (direction = 3) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do zizala.moveLeft();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (direction = 4) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do zizala.moveRight();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab // prodleva před dalším posunutím
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do Sys.wait(5); 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Dealokace objektu z paměti*/
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void dispose() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do Memory.deAlloc(this);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}    
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  * Třída představuje jednu žížalu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 class Zizala \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     // poloha hlavy žížaly na obrazovce
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     field int x, y;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     // tlošťka žížaly
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     field int size;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * Vytvoření žížaly na souřadnicích (x, y).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * param Ax umístění v horizontální ose
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      * param Ay umístění v vertikální ose
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64      */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     constructor Zizala new(int Ax, int Ay) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         let x = Ax;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         let y = Ay;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab let size = 2;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do draw();
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return this;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Dealokace objektu z paměti.*/
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void dispose() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do Memory.deAlloc(this);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Vykreslení hlavy žížaly na obrazovku.*/
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void draw() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do Screen.setColor(true);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         do Screen.drawRectangle(x, y, x + size, y + size);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \} 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Pohnutí žížaly nahoru. */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void moveUp() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (y > 0) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             let y = y - 1;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.setColor(true);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.drawRectangle(x, y, x + size, y + size);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \tab 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Pohnutí žížaly dolu. */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void moveDown() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (y<(256-size-1)) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             let y = y + 1;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.setColor(true);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.drawRectangle(x, y, x + size, y + size);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Pohnutí žížaly doleva. */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void moveLeft() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (x > 0) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             let x = x - 1;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.setColor(true);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.drawRectangle(x, y, x + size, y + size);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     /** Pohnutí žížaly doprava. */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     method void moveRight() \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         if (x < (512-size-1)) \{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             let x = x + 1;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.setColor(true);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64             do Screen.drawRectangle(x, y, x + size, y + size);
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64         return;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 13\tab Projekt 10 – Kompilátor – Analýza syntaxe
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 V tomto a dalším projektu bude sestaven kompilátor z programovacího jazyka Jack do jazyka VM. První z těchto projektů se věnuje analýze syntaxe jazyka, tedy rozdělení kódu na jednot-livé prvky a rozhodnutí o jejich významu (symboly, klíčová slova, identifikátory, atd.). Aby bylo možné zkontrolovat funkčnost nedokončeného kompilátoru, je jeho výstup pro tento projekt reprezentován ve formě XML. (NISAN Noam a Shimon SCHOCKEN 2005, str. 165) Úkolem této kapitoly je vytvoření dvou základních stavebních prvků kompilátoru: tzv. Toke-nizer (Rozděluje kód na jednotlivé prvky a přiřazuje jim typový význam.) a tzv. Compilatio-nEngine (Kontroluje syntaxi a překládá zatím do XML.)
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Nejtěžší částí implementace tokenizéru je rozdělení kódu na dílčí části (tzv. tokeny). K tomu jsem zvolil efektivní přístup přes regulární výrazy. Regulární výraz zaprvé rozděluje text podle mezer a zadruhé podle každého symbolu z gramatiky jazyka. Přičemž je potřeba si uvědomit, že není žádoucí text pouze rozdělit, ale také si zapamatovat samotné rozdělovače, které jsou také samotnými tokeny.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Ještě před rozdělením kódu byl však využit ještě jiný regulární výraz pro odstranění všech komentářů z kódu:
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 "(?:/\\\\*(?:[^*]|(?:\\\\*+[^*/]))*\\\\*+/)|(?://.*)"
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Regulární výraz pro rozdělení kódu na jednotlivé tokeny:
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 "(\\\\s|(?<=\\")|(?=\\")|(?<=\\\\\{)|(?=\\\\\{)|(?<=\\\\\})|(?=\\\\\})|(?<=\\\\()|(?=\\\\()|(?<=\\\\))|(?=\\\\))|(?<=\\\\[)|(?=\\\\[)|(?<=\\\\])|(?=\\\\])|(?<=\\\\.)|(?=\\\\.)|(?<=\\\\,)|(?=\\\\,)|(?<=\\\\;)|(?=\\\\;)|(?<=\\\\+)|(?=\\\\+)|(?<=\\\\-)|(?=\\\\-)|(?<=\\\\*)|(?=\\\\*)|(?<=\\\\/)|(?=\\\\/)|(?<=\\\\&)|(?=\\\\&)|(?<=\\\\|)|(?=\\\\|)|(?<=\\\\<)|(?=\\\\<)|(?<=\\\\>)|(?=\\\\>)|(?<=\\\\=)|(?=\\\\=)|(?<=\\\\~)|(?=\\\\~))"
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Ve finále se ukázalo, že nejde kód pouze takto rozdělit, protože se v něm mohou nacházet i komplikované řetězcové hodnoty, u kterých je žádoucí, aby zůstaly nerozděleny jako jeden token. Z toho důvody byly tyto řetězce z kódu odseparovány ještě před rozdělením kódu, pomocí následujícího regulárního výrazu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 "([\\"'])(?:(?=(\\\\\\\\?))\\\\2.)*?\\\\1"
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Zbytek kódu byl pracný, ale nijak zvlášť složitý. Ve chvíli, kdy tokenizér poskytuje jednotlivé tokeny, stačí ve třídě CompilationEngine správně generovat strukturu gramatiky jazyka. Zatím nedochází k žádnému překladu, ale pouze ke generování XML značek daných tokenů (viz Obrázek 38).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Obrázek 38: Ukázka výstupu 1. části kompilátoru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 14\tab Projekt 11 – Kompilátor – Generování kódu
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Úkolem studenta v této části je dokončení kompilátoru z minulého projektu, což představuje implementaci generování samotného kódu VM. Klíčové pro tento projekt je vytvoření dvou stavebních prvků: Symbol table (Tabulka udržující informace o fyzické adrese každé proměnné a o jejím rozsahu platnosti.) a VM-writer (Zajišťuje převod příkazů jazyka Jack na příkazy VM). (NISAN Noam a Shimon SCHOCKEN 2005, str. 11????????) Po propojení s prvky z předchozího projektu je kompilátor kompletní.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Implementace třídy SymbolTable je intuitivní a velice jednoduchá. Pro jednotlivé rozsahy platnosti (třídy a rutiny) proměnných je ideální hašovací tabulka. Ta má jako klíč identifikátor proměnných a jako hodnotu má objekt Symbol, který slouží jako pouhá přepravka pro vlast-nosti jednoho identifikátoru (datový typ, druh proměnné a adresu v současném rozsahu plat-nosti). Je potřeba pouze dávat pozor, že při jakémkoli poskytování informací skrz rozhraní třídy má vždy přednost tabulka pro rozsah platnosti rutiny (viz následující kód).
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 /**
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  * Vrací datový typ identifikátoru v současném rozsahu platnosti.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  * @param name název identifikátoru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  * @return typ identifikátoru
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  */
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 public String typeOf(String name)\{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64   Symbol symbol;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64   if((symbol = subroutinScope.get(name))!=null)\{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     return symbol.typ;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64   \}else if((symbol = classScope.get(name))!=null)\{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     return symbol.typ;
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64   \}else\{
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64     return "";
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64   \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 \}
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Implementace třídy VMWriter je velice jednoduchá, protože nedělá nic jiného, než že zapisuje VM příkazy do souboru. Ale velice těžký úkol je předělání třídy CompilationEngine, která byla implementována v minulém projektu, ale zatím uměla pouze rozdělit kód na klíčové části podle gramatiky jazyka Jack. Struktura třídy zůstala úplně stejná, pouze byl odstraněn kód pro generování XML výstupu a byl nahrazen kódem pro generování VM kódu. Pro implementaci této části je zapotřebí dobrá znalost OOP, aby člověk dokázal převést abstrakci OOP do jazyka VM. Zejména složitý je překlad syntaxe jazyka Jack tam, kde VM jazyk kvůli zásob-níkové struktuře musí postupovat opačně. Takový případ nastane například při aritmetických operacích, viz příklad níže.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 a = 5 + (8 - 10)  //překládá se za běhu zleva doprava
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 //překlad do jazyka VM
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 PUSH 8    //vrchol zásobníku: 8
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 PUSH 10   //vrchol zásobníku: 10
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 SUB       //vrchol zásobníku: -2
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 PUSH 5    //vrchol zásobníku: 5
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 ADD       //vrchol zásobníku: 3
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 POP a     //a = 3
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Přiřazení, které je pro člověka přirozenější provést „první“ se ve skutečnosti provádí nakonec. Tento fakt je o to složitější, pokud by místo proměnné a byl v kódu prvek pole. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Závěr
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Celý koncept vnímám jako velice přínosný a inspirativní pro studenty oborů, které se týkají počítačové techniky, ale zejména má hluboký význam pro studenty oborů týkajících se pro-gramování. Největší přínos vnímám v propojení obrovského množství látky z různých tech-nických oborů do jednoho smysluplného a zajímavého celku. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Ze začátku to nezkušenému člověku připadá neskutečné, že by něco takového mohl vytvořit sám. Tohoto pocitu se nezbaví až do konce celého kurzu, protože úkoly, které má splnit, neustálé gradují svou obtížností. Ale právě to dělá tento kurz zajímavým, protože člověk s každým dalším projektem překonává svoje očekávání.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Návaznost jednotlivých projektů je výborná a kniha je naprosto skvěle napsaná. Vysvětlí studentovi vše podstatné, co bude potřebovat k implementaci, a to velice příjemným a pocho-pitelným způsobem. Právě kvalitně napsanou knihu, která precizně vede studenta celým kurzem, vnímám jako klíčový prvek úspěchu tohoto kurzu. Autor směle tvrdí, že kurz zvládne každý. S tímto tvrzením bych mohl souhlasit, ale dodal bych, že to neznamená, že je jednodu-chý. Zejména poslední projekty, kde má student sestavit jednotlivé části kompilátoru vyžadují slušnou znalost programování, aby se v tématu neztratil.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Pro mě jakožto studenta oboru IT byly zejména zajímavé poslední projekty, protože jsem si tam prakticky a velice podrobně vyzkoušel, co všechno se musí provést při pouhém volání jediné funkce. Jak funguje zásobník funkcí a jak se ukládají data do paměti. Kolik příkazů se v jazyce symbolických adres musí provést, aby se v jazyce VM uložila jedna hodnota na vrchol zásobníku atd. Celkově jsem kurz vnímal jako demonstraci obrovského výkonu dneš-ních počítačů, kterou si už většina lidí ani neuvědomuje.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Budoucí programátor se teoreticky učí, jak asi funguje počítač, jak funguje kompilátor a co se to vlastně ve skutečnosti v tom počítači děje s tím kódem, který on sám vytvořil. V některých případech to teoreticky ví a někdy pouze tuší. Nicméně v tomto kurzu veškeré teoretické znalosti začínají nabývat praktického rázu. Z pouhého memorování a předávání znalostí se stává zkušenost a ta má mnohem větší přidanou hodnotu.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64  
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 Použitá literatura
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 NISAN Noam a Shimon SCHOCKEN, 2005. The elements of computing systems: building a modern computer from first principles. Cambridge, Mass.: MIT Press, xiv, 325 p. 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 ISBN 02-621-4087-X.
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 THE UNIVERSITY OF EDINBURG INFORMATICS, 2007. From Nand to Tetris in 12 Steps. In: The University of Edinburg informatics [online]. [cit. 2015-04-05]. Dostupné z: http://wcms.inf.ed.ac.uk/lfcs/events/abstract-archives/2006-2007/from-nand-to-tetris-in-12-steps
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 TORGOVNICK Kate, 2012. How you too can build your own computer. In: TED Blog [online]. [cit. 2015-04-05]. Dostupné z: 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 http://blog.ted.com/how-you-too-can-build-your-own-computer/
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2013. Čítač instrukcí. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation, [cit. 2015-04-04]. Dostupné z: http://cs.wikipedia.org/wiki/%C4%8C%C3%ADta%C4%8D_instrukc%C3%AD
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2014a. Aritmeticko-logická jednotka. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation [cit. 2015-04-04]. Dostupné z: http://cs.wikipedia.org/wiki/Aritmeticko-logick%C3%A1_jednotka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2014b. Jazyk symbolických adres. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation, 2001- [cit. 2015-04-04]. Dostupné z: http://cs.wikipedia.org/wiki/Jazyk_symbolick%C3%BDch_adres
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2015a. RAM. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation [cit. 2015-04-04]. Dostupné z: http://cs.wikipedia.org/wiki/RAM
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2015b. Hardware description language. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation [cit. 2015-04-04]. Dostupné z: http://en.wikipedia.org/wiki/Hardware_description_language
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2015c. Flip-flop (electronics). In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation [cit. 2015-04-04]. Dostupné z: http://en.wikipedia.org/wiki/Flip-flop_%28electronics%29
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 WIKIPEDIA, 2015d. Hašovací tabulka. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA): Wikimedia Foundation, 2001- [cit. 2015-04-04]. Dostupné z: http://cs.wikipedia.org/wiki/Ha%C5%A1ovac%C3%AD_tabulka
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\f3\fs24{\cf1{\highlight64 
+}}\par\pard \ql \li0\ri0\fi0\sa0\sb0\sl240\itap0\par}
